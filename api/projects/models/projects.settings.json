@@ -21,7 +21,7 @@
     "text": {
       "type": "richtext"
     },
-    "image": {
+    "thumbnail": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -37,6 +37,26 @@
     },
     "category": {
       "type": "string"
+    },
+    "sideImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "mainImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
