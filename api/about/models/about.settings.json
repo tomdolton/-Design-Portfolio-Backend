@@ -19,6 +19,16 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "profilePicture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }
